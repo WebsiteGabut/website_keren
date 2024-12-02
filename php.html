@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tutorial PHP - Malas Ngoding</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Tutorial PHP</h1>
+            <p>Pelajari dasar-dasar PHP untuk pengembangan web dinamis.</p>
+        </header>
+
+        <div class="content">
+            <h2>Apa itu PHP?</h2>
+            <p>PHP (Hypertext Preprocessor) adalah bahasa pemrograman server-side yang dirancang untuk pengembangan web. PHP memungkinkan Anda untuk membuat halaman web yang dinamis dan interaktif dengan memproses data dari server.</p>
+
+            <h2>Menambahkan PHP ke Halaman Web</h2>
+            <p>PHP dapat ditambahkan ke halaman web dengan cara berikut:</p>
+            <pre>
+<code>
+&lt;?php
+    echo "Hello, World!";
+?&gt;
+</code>
+            </pre>
+            <p>File PHP biasanya memiliki ekstensi <code>.php</code> dan dapat disisipkan di dalam file HTML.</p>
+
+            <h2>Dasar-Dasar PHP</h2>
+            <p>Berikut adalah beberapa konsep dasar dalam PHP:</p>
+            <ul>
+                <li><strong>Variabel</strong>: Tempat untuk menyimpan data.</li>
+                <pre>
+<code>
+$nama = "John";
+$umur = 25;
+</code>
+                </pre>
+
+                <li><strong>Tipe Data</strong>: PHP mendukung berbagai tipe data, termasuk string, integer, float, boolean, dan array.</li>
+                <pre>
+<code>
+$isActive = true; // boolean
+$jumlah = 100; // integer
+$harga = 99.99; // float
+$warna = array("merah", "hijau", "biru"); // array
+</code>
+                </pre>
+
+                <li><strong>Fungsi</strong>: Kumpulan kode yang dapat dipanggil untuk melakukan tugas tertentu.</li>
+                <pre>
+<code>
+function sayHello() {
+    return "Hello, World!";
+}
+echo sayHello();
+</code>
+                </pre>
+
+                <li><strong>Pengkondisian</strong>: Menggunakan pernyataan <code>if</code> untuk membuat keputusan dalam kode.</li>
+                <pre>
+<code>
+if ($umur >= 18) {
+    echo 'Anda sudah dewasa.';
+} else {
+    echo 'Anda masih anak-anak.';
+}
+</code>
+                </pre>
+
+                <li><strong>Perulangan</strong>: Menggunakan pernyataan <code>for</code> atau <code>while</code> untuk mengulangi blok kode.</li>
+                <pre>
+<code>
+for ($i = 0; $i < 5; $i++) {
+    echo $i;
+}
+</code>
+                </pre>
+            </ul>
+
+            <h2>Contoh Penggunaan</h2>
+            <p>Berikut adalah contoh penggunaan PHP untuk membuat halaman web dinamis:</p>
+            <pre>
+<code>
+&lt;!DOCTYPE html&gt;
+&lt;html lang="id"&gt;
+&lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;title&gt;Contoh PHP&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;h1&gt;Selamat Datang&lt;/h1&gt;
+    &lt;?php
+        echo "&lt;p&gt;Ini adalah contoh penggunaan PHP.&lt;/p&gt;";
+    ?&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</code>
+            </pre>
+
+            <h2>Kesimpulan</h2>
+            <p>PHP adalah bahasa pemrograman yang sangat populer untuk pengembangan web. Dengan memahami dasar-dasar PHP, Anda dapat membuat aplikasi web yang dinamis dan interaktif. PHP memungkinkan Anda untuk berinteraksi dengan database, mengelola sesi pengguna, dan banyak lagi.</p>
+            <p>Praktikkan apa yang telah Anda pelajari, eksplorasi lebih jauh, dan jangan ragu untuk mencari sumber daya tambahan untuk memperdalam pengetahuan Anda tentang PHP. Selamat belajar!</p>
+        </div>
+    </div>
+</body>
+</html>

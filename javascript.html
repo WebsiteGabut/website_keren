@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tutorial JavaScript - Malas Ngoding</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Tutorial JavaScript</h1>
+            <p>Pelajari dasar-dasar JavaScript untuk menambahkan interaktivitas pada halaman web Anda.</p>
+        </header>
+
+        <div class="content">
+            <h2>Apa itu JavaScript?</h2>
+            <p>JavaScript adalah bahasa pemrograman yang digunakan untuk membuat halaman web interaktif. Dengan JavaScript, Anda dapat mengubah konten, mengontrol multimedia, membuat animasi, dan banyak lagi.</p>
+
+            <h2>Menambahkan JavaScript ke Halaman Web</h2>
+            <p>JavaScript dapat ditambahkan ke halaman web dengan cara berikut:</p>
+            <ul>
+                <li><strong>Inline JavaScript</strong>: Menyisipkan kode JavaScript langsung ke dalam atribut HTML.</li>
+                <pre>
+<code>
+&lt;button onclick="alert('Hello, World!')"&gt;Klik Saya&lt;/button&gt;
+</code>
+                </pre>
+
+                <li><strong>Internal JavaScript</strong>: Menyisipkan kode JavaScript di dalam tag &lt;script&gt; di bagian &lt;head&gt; atau &lt;body&gt; dari dokumen HTML.</li>
+                <pre>
+<code>
+&lt;script&gt;
+    alert('Hello, World!');
+&lt;/script&gt;
+</code>
+                </pre>
+
+                <li><strong>External JavaScript</strong>: Menggunakan file JavaScript terpisah yang di-link ke dokumen HTML.</li>
+                <pre>
+<code>
+&lt;script src="script.js"&gt;&lt;/script&gt;
+</code>
+                </pre>
+            </ul>
+
+            <h2>Dasar-Dasar JavaScript</h2>
+            <p>Berikut adalah beberapa konsep dasar dalam JavaScript:</p>
+            <ul>
+                <li><strong>Variabel</strong>: Tempat untuk menyimpan data.</li>
+                <pre>
+<code>
+var nama = "John";
+let umur = 25;
+const negara = "Indonesia";
+</code>
+                </pre>
+
+                <li><strong>Tipe Data</strong>: JavaScript memiliki beberapa tipe data, termasuk string, number, boolean, dan objek.</li>
+                <pre>
+<code>
+let isActive = true; // boolean
+let jumlah = 100; // number
+let nama = "Jane"; // string
+</code>
+                </pre>
+
+                <li><strong>Fungsi</strong>: Kumpulan kode yang dapat dipanggil untuk melakukan tugas tertentu.</li>
+                <pre>
+<code>
+function sayHello() {
+    alert('Hello, World!');
+}
+</code>
+                </pre>
+                <p>Memanggil fungsi:</p>
+                <pre>
+<code>
+sayHello();
+</code>
+                </pre>
+
+                <li><strong>Pengkondisian</strong>: Menggunakan pernyataan <code>if</code> untuk membuat keputusan dalam kode.</li>
+                <pre>
+<code>
+if (umur >= 18) {
+    alert('Anda sudah dewasa.');
+} else {
+    alert('Anda masih anak-anak.');
+}
+</code>
+                </pre>
+
+                <li><strong>Perulangan</strong>: Menggunakan pernyataan <code>for</code> atau <code>while</code> untuk mengulangi blok kode.</li>
+                <pre>
+<code>
+for (let i = 0; i < 5; i++) {
+    console.log(i);
+}
+</code>
+                </pre>
+            </ul>
+
+            <h2>Contoh Penggunaan</h2>
+            <p>Berikut adalah contoh penggunaan JavaScript untuk membuat halaman interaktif:</p>
+            <pre>
+<code>
+&lt;!DOCTYPE html&gt;
+&lt;html lang="id"&gt;
+&lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;title&gt;Contoh JavaScript&lt;/title&gt;
+    &lt;script src="script.js"&gt;&lt;/script&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;h1&gt;Sel

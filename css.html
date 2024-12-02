@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tutorial CSS - Malas Ngoding</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Tutorial CSS</h1>
+            <p>Pelajari dasar-dasar CSS untuk mempercantik halaman web Anda.</p>
+        </header>
+
+        <div class="content">
+            <h2>Apa itu CSS?</h2>
+            <p>CSS (Cascading Style Sheets) adalah bahasa yang digunakan untuk mendesain dan mengatur tampilan halaman web. CSS memungkinkan Anda untuk mengubah warna, font, layout, dan banyak aspek lainnya dari elemen HTML.</p>
+
+            <h2>Struktur Dasar CSS</h2>
+            <pre>
+<code>
+/* Ini adalah komentar di CSS */
+selector {
+    property: value;
+}
+</code>
+            </pre>
+
+            <h2>Metode Penerapan CSS</h2>
+            <ul>
+                <li><strong>Inline CSS</strong>: Menggunakan atribut <code>style</code> langsung pada elemen HTML.</li>
+                <pre>
+<code>
+&lt;p style="color: red;"&gt;Ini adalah paragraf dengan teks merah.&lt;/p&gt;
+</code>
+                </pre>
+
+                <li><strong>Internal CSS</strong>: Menyisipkan CSS di dalam tag &lt;style&gt; di bagian &lt;head&gt; dari dokumen HTML.</li>
+                <pre>
+<code>
+&lt;style&gt;
+    body {
+        background-color: lightblue;
+    }
+&lt;/style&gt;
+</code>
+                </pre>
+
+                <li><strong>External CSS</strong>: Menggunakan file CSS terpisah yang di-link ke dokumen HTML.</li>
+                <pre>
+<code>
+&lt;link rel="stylesheet" href="style.css"&gt;
+</code>
+                </pre>
+            </ul>
+
+            <h2>Selector CSS</h2>
+            <p>Selector digunakan untuk memilih elemen yang akan diberikan gaya. Berikut adalah beberapa jenis selector:</p>
+            <ul>
+                <li><strong>Selector Tag</strong>: Memilih semua elemen dari tipe tertentu.</li>
+                <pre>
+<code>
+h1 {
+    color: blue;
+}
+</code>
+                </pre>
+
+                <li><strong>Selector Kelas</strong>: Memilih elemen dengan kelas tertentu (didefinisikan dengan <code>.</code>).</li>
+                <pre>
+<code>
+.button {
+    background-color: green;
+    color: white;
+}
+</code>
+                </pre>
+
+                <li><strong>Selector ID</strong>: Memilih elemen dengan ID tertentu (didefinisikan dengan <code>#</code>).</li>
+                <pre>
+<code>
+#header {
+    font-size: 24px;
+}
+</code>
+                </pre>
+            </ul>
+
+            <h2>Properti CSS Umum</h2>
+            <ul>
+                <li><strong>color</strong>: Mengatur warna teks.</li>
+                <li><strong>background-color</strong>: Mengatur warna latar belakang.</li>
+                <li><strong>font-size</strong>: Mengatur ukuran font.</li>
+                <li><strong>margin</strong>: Mengatur ruang di luar elemen.</li>
+                <li><strong>padding</strong>: Mengatur ruang di dalam elemen.</li>
+                <li><strong>border</strong>: Mengatur garis batas elemen.</li>
+            </ul>
+
+            <h2>Contoh Penggunaan</h2>
+            <p>Berikut adalah contoh penggunaan CSS untuk mendesain halaman HTML:</p>
+            <pre>
+<code>
+&lt;!DOCTYPE html&gt;
+&lt;html lang="id"&gt;
+&lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;title&gt;Contoh CSS&lt;/title&gt;
+    &lt;link rel="stylesheet" href="style.css"&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;h1 class="heading"&gt;Selamat Datang&lt;/h1&gt;
+    &lt;p class="description"&gt;Ini adalah contoh halaman dengan CSS.&lt;/p&gt;
+    &lt;button class="button"&gt;Klik Saya&lt;/button&gt;
+&lt;/body&gt

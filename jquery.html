@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tutorial jQuery - Malas Ngoding</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Tutorial jQuery</h1>
+            <p>Pelajari dasar-dasar jQuery untuk mempermudah manipulasi DOM dan interaktivitas web.</p>
+        </header>
+
+        <div class="content">
+            <h2>Apa itu jQuery?</h2>
+            <p>jQuery adalah pustaka JavaScript yang dirancang untuk menyederhanakan manipulasi HTML, penanganan acara, animasi, dan interaksi dengan AJAX. jQuery memudahkan pengembang web untuk menulis kode yang lebih sedikit dan lebih efisien.</p>
+
+            <h2>Menambahkan jQuery ke Halaman Web</h2>
+            <p>Anda dapat menambahkan jQuery ke halaman web Anda dengan cara berikut:</p>
+            <pre>
+<code>
+&lt;script src="https://code.jquery.com/jquery-3.6.0.min.js"&gt;&lt;/script&gt;
+</code>
+            </pre>
+
+            <h2>Dasar-Dasar jQuery</h2>
+            <p>Berikut adalah beberapa konsep dasar dalam jQuery:</p>
+            <ul>
+                <li><strong>Memilih Elemen</strong>: Menggunakan selector jQuery untuk memilih elemen HTML.</li>
+                <pre>
+<code>
+$(document).ready(function() {
+    $("h1").css("color", "blue");
+});
+</code>
+                </pre>
+
+                <li><strong>Menangani Acara</strong>: Menggunakan jQuery untuk menangani berbagai jenis acara seperti klik, hover, dll.</li>
+                <pre>
+<code>
+$("#myButton").click(function() {
+    alert("Tombol diklik!");
+});
+</code>
+                </pre>
+
+                <li><strong>Manipulasi DOM</strong>: Menambahkan, menghapus, atau mengubah elemen HTML.</li>
+                <pre>
+<code>
+$("#myDiv").html("&lt;p&gt;Konten baru&lt;/p&gt;");
+$("#myDiv").append("&lt;p&gt;Konten tambahan&lt;/p&gt;");
+</code>
+                </pre>
+
+                <li><strong>Animasi</strong>: Menggunakan jQuery untuk membuat efek animasi.</li>
+                <pre>
+<code>
+$("#myDiv").fadeIn();
+$("#myDiv").slideUp();
+</code>
+                </pre>
+
+                <li><strong>AJAX</strong>: Menggunakan jQuery untuk melakukan permintaan AJAX.</li>
+                <pre>
+<code>
+$.ajax({
+    url: "data.json",
+    dataType: "json",
+    success: function(data) {
+        console.log(data);
+    }
+});
+</code>
+                </pre>
+            </ul>
+
+            <h2>Contoh Penggunaan</h2>
+            <p>Berikut adalah contoh penggunaan jQuery untuk membuat halaman web interaktif:</p>
+            <pre>
+<code>
+&lt;!DOCTYPE html&gt;
+&lt;html lang="id"&gt;
+&lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;title&gt;Contoh jQuery&lt;/title&gt;
+    &lt;script src="https://code.jquery.com/jquery-3.6.0.min.js"&gt;&lt;/script&gt;
+    &lt;script&gt;
+        $(document).ready(function() {
+            $("#myButton").click(function() {
+                $("#myDiv").fadeToggle();
+            });
+        });
+    &lt;/script&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;h1&gt;Selamat Datang&lt;/h1&gt;
+    &lt;button id="myButton"&gt;Tampilkan/Sembunyikan&lt;/button&gt;
+    &lt;div id="myDiv" style="display:none;"&gt;
+        &lt;p&gt;Ini adalah konten yang dapat ditampilkan atau disembunyikan.&lt;/p&gt;
+    &lt;/div&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</code>
+            </pre>
+
+            <h2>Kesimpulan</h2>
